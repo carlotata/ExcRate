@@ -4,6 +4,8 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>API Data Fetch - Dynamic Currencies</title>
+
+      <link rel="manifest" href="manifest.json">
    </head>
    <style>
       body {
@@ -207,6 +209,11 @@
 
          currency1Dropdown.disabled = false;
          currency2Dropdown.disabled = false;
+      }
+   </script>
+   <script>
+      if ("serviceWorker" in navigator) {
+         navigator.serviceWorker.register("service-worker.js");
       }
    </script>
 </html>
