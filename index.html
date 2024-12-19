@@ -5,10 +5,12 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>ExcRate - API</title>
       <link rel="stylesheet" href="index.css" />
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
       <link rel="manifest" href="manifest.json" />
-      <link rel="stylesheet" href="iosLogo.html">
+      <link rel="stylesheet" href="iosLogo.html" />
    </head>
    <body>
+      <i id="installButton" class="fas fa-download" title="Install App" hidden></i>
       <div class="container">
          <h4>Exchange Rate - API</h4>
 
@@ -28,10 +30,11 @@
          <button id="fetchData" onclick="fetchData()">Exchange Currency</button>
       </div>
       <footer>
-         <p> ExcRate - API. Final Project by Carl Aviso</p>
+         <p>ExcRate - API. Final Project by Carl Aviso</p>
       </footer>
    </body>
    <script src="index.js"></script>
+   <script src="app.js"></script>
    <script>
       if ("serviceWorker" in navigator) {
          navigator.serviceWorker.register("service-worker.js");

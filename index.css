@@ -9,10 +9,26 @@ body {
    overflow: hidden;
    padding: 0 1rem;
 }
+#installButton {
+  font-size: 1.5rem; 
+  color: #035a2a;
+  cursor: pointer; 
+  position: fixed; 
+  top: 10px;
+  right: 10px;
+  z-index: 1000; 
+  background-color: transparent;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#installButton:hover {
+  color: #61d870; 
+  transform: scale(1.2); 
+}
 
 .container {
    margin: 1rem;
-   box-shadow: 0px 0px 4px 0px rgb(104, 103, 103);
+   box-shadow: 0px 0px 5px 1px rgb(27, 68, 37);
    border-radius: 24px;
    padding: 1.5rem;
    display: flex;
@@ -24,10 +40,11 @@ body {
    position: relative;
    width: 100%;
    box-sizing: border-box;
+   margin-bottom: 5rem;
 }
 
 h4 {
-   color:  #1c6320;
+   color: #1c6320;
    font-size: 1.5rem;
    margin-top: 1rem;
    text-align: center;
@@ -70,19 +87,23 @@ button {
 #fetchData {
    background-color: #4caf50;
    color: white;
+   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 #fetchData:hover {
    background-color: #115e15;
+   transform: scale(0.95);
 }
 
 #closeFetch {
    background-color: rgb(216, 37, 37);
    color: white;
+   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 #closeFetch:hover {
    background-color: rgb(165, 12, 12);
+   transform: scale(0.95);
 }
 
 #dataDisplay {
@@ -101,7 +122,7 @@ button {
    height: 1rem;
    margin-bottom: 20px;
 }
-footer{
+footer {
    position: absolute;
    bottom: 0;
    left: 0;
