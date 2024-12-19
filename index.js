@@ -59,7 +59,7 @@ async function fetchData() {
          displayAPI.innerText = "Exchange rate not found.";
       }
    } catch (error) {
-      displayAPI.innerText = "Exchange rate not found.";
+      displayAPI.innerText = "Input not found.";
    }
 }
 
