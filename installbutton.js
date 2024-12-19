@@ -1,5 +1,6 @@
 let deferredPrompt;
 const installButton = document.getElementById("installButton");
+let dataDisplay = document.getElementById("dataDisplay");
 
 window.addEventListener("beforeinstallprompt", (e) => {
    e.preventDefault();
@@ -12,15 +13,17 @@ window.addEventListener("beforeinstallprompt", (e) => {
 
       deferredPrompt.userChoice.then((choiceResult) => {
          if (choiceResult.outcome === "accepted") {
-            console.log("User accepted the install prompt");
+            window.addEventListener("appinstalled", () => {
+               swal(
+                  "Installed succesfully!",
+                  "ExcRate by Carl Aviso",
+                  "success"
+               );
+            });
          } else {
-            console.log("User dismissed the install prompt");
+            swal("Installation cancelled", "", "error");
          }
          deferredPrompt = null;
       });
    });
-});
-
-window.addEventListener("appinstalled", () => {
-   console.log("PWA was installed");
 });
