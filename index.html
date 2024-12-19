@@ -10,7 +10,10 @@
       <link rel="stylesheet" href="iosLogo.html" />
    </head>
    <body>
-      <i id="installButton" class="fas fa-download" title="Install App" hidden></i>
+      <div id="installButton" hidden>
+         <i id="installIcon" class="fas fa-download"></i>
+      </div>
+
       <div class="container">
          <h4>Exchange Rate - API</h4>
 
@@ -34,7 +37,7 @@
       </footer>
    </body>
    <script src="index.js"></script>
-   <script src="app.js"></script>
+   <script src="installbutton.js"></script>
    <script>
       if ("serviceWorker" in navigator) {
          navigator.serviceWorker.register("service-worker.js");

@@ -9,21 +9,22 @@ body {
    overflow: hidden;
    padding: 0 1rem;
 }
+
 #installButton {
-  font-size: 1.5rem; 
-  color: #035a2a;
-  cursor: pointer; 
-  position: fixed; 
-  top: 10px;
-  right: 10px;
-  z-index: 1000; 
-  background-color: transparent;
-  transition: color 0.3s ease, transform 0.3s ease;
+   font-size: 1.5rem;
+   color: #035a2a;
+   cursor: pointer;
+   position: fixed;
+   top: 10px;
+   right: 10px;
+   z-index: 1000;
+   background-color: transparent;
+   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 #installButton:hover {
-  color: #61d870; 
-  transform: scale(1.2); 
+   color: #61d870;
+   transform: scale(1.2);
 }
 
 .container {
